@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BasePulse — pay-per-call Base data for agents</title>
+  <style>
+    body { font-family: -apple-system, system-ui, sans-serif; max-width: 640px; margin: 80px auto; padding: 0 20px; line-height: 1.6; color: #111; }
+    code { background: #f4f4f5; padding: 2px 6px; border-radius: 4px; }
+    .price { color: #0052ff; font-weight: 600; }
+  </style>
+</head>
+<body>
+  <h1>BasePulse</h1>
+  <p>A pay-per-call data API for AI agents on <strong>Base</strong>. Agents pay
+     <span class="price">$0.001</span> in USDC per request via the x402 protocol — no API keys, no subscriptions.</p>
+  <h3>Endpoints</h3>
+  <ul>
+    <li><code>GET /gas</code> — current Base gas price</li>
+    <li><code>GET /block</code> — latest block number + timestamp</li>
+    <li><code>GET /balance/:address</code> — ETH balance of any address</li>
+  </ul>
+  <p>Built with x402 + Base Builder Codes.</p>
+</body>
+</html>
