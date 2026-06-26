@@ -1,0 +1,20 @@
+{
+  "type": "ERC-8004-AgentRegistration",
+  "name": "BasePulse",
+  "description": "A pay-per-call Base chain-data agent. Serves live gas price, latest block, and address balance data to AI agents over the x402 payment protocol, for $0.001 USDC per request.",
+  "image": "https://tomiin.github.io/agent.svg",
+  "services": [
+    {
+      "type": "x402",
+      "description": "Pay-per-call Base data API (gas / block / balance), $0.001 USDC per call via x402",
+      "url": "https://tomiin.github.io"
+    },
+    {
+      "type": "source-code",
+      "description": "Open-source implementation",
+      "url": "https://github.com/tomiin/basepulse"
+    }
+  ],
+  "registrations": [],
+  "supportedTrust": ["reputation"]
+}
