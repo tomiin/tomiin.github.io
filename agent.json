@@ -1,3 +1,4 @@
+
 {
   "type": "ERC-8004-AgentRegistration",
   "name": "BasePulse",
@@ -15,6 +16,17 @@
       "url": "https://github.com/tomiin/basepulse"
     }
   ],
-  "registrations": [],
-  "supportedTrust": ["reputation"]
+  "registrations": [
+    {
+      "agentRegistry": "eip155:8453:0x8004A169FB4a3325136EB29fA0ceB6D2e539a432",
+      "agentId": "57064"
+    },
+    {
+      "agentRegistry": "eip155:84532:0x8004A818BFB912233c491871b3d84c89A494BD9e",
+      "agentId": "7213"
+    }
+  ],
+  "supportedTrust": [
+    "reputation"
+  ]
 }
