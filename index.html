@@ -6,23 +6,35 @@
   <meta name="base:app_id" content="6a3aa2c7303847e6f697469f" />
   <meta name="talentapp:project_verification" content="794c377f1faed333380503c81f16ed490154f5d91bad8c521f3199e7abd09e4135328e1f1a872d26ad7215bf6095d643be23a17ce23819749ff8fe5f0f3d39c1" />
   <meta name="talentapp:project_verification" content="b2f07824c532911c02d7fbbe6de79b9ec1251f384d68967720edead44f2c84166079cc0712548af7596893241595ca91f32fcb4b570d998fa25fe0fd4fac0921" />
-  <title>BasePulse — pay-per-call Base data for agents</title>
+  <title>BasePulse — onchain data for AI agents</title>
   <style>
-    body { font-family: -apple-system, system-ui, sans-serif; max-width: 640px; margin: 80px auto; padding: 0 20px; line-height: 1.6; color: #111; }
-    code { background: #f4f4f5; padding: 2px 6px; border-radius: 4px; }
-    .price { color: #0052ff; font-weight: 600; }
+    :root { --blue:#0A5CFF; --ink:#0E1116; --muted:#5a6472; }
+    * { box-sizing: border-box; }
+    body { font-family: -apple-system, system-ui, sans-serif; max-width: 720px; margin: 0 auto; padding: 64px 24px; line-height: 1.6; color: var(--ink); }
+    .logo { width: 96px; height: 96px; border-radius: 22px; display:block; }
+    h1 { font-size: 40px; margin: 24px 0 4px; }
+    .tag { color: var(--muted); font-size: 18px; margin: 0 0 32px; }
+    code { background:#f4f4f5; padding:2px 7px; border-radius:6px; }
+    .endpoints li { margin: 6px 0; }
+    .price { color: var(--blue); font-weight: 600; }
+    a { color: var(--blue); }
   </style>
 </head>
 <body>
+  <img class="logo" src="basepulse-icon.png" alt="BasePulse logo" />
   <h1>BasePulse</h1>
-  <p>A pay-per-call data API for AI agents on <strong>Base</strong>. Agents pay
-     <span class="price">$0.001</span> in USDC per request via the x402 protocol — no API keys, no subscriptions.</p>
+  <p class="tag">Onchain data for AI agents, on Base.</p>
+
+  <p>A pay-per-call API that serves live Base chain data to AI agents over the
+     <strong>x402</strong> protocol — <span class="price">$0.001 USDC</span> per request, no API keys, no subscriptions.</p>
+
   <h3>Endpoints</h3>
-  <ul>
+  <ul class="endpoints">
     <li><code>GET /gas</code> — current Base gas price</li>
     <li><code>GET /block</code> — latest block number + timestamp</li>
     <li><code>GET /balance/:address</code> — ETH balance of any address</li>
   </ul>
-  <p>Built with x402 + Base Builder Codes.</p>
+
+  <p>Built with x402 + Base Builder Codes · <a href="https://github.com/tomiin/basepulse">source on GitHub</a></p>
 </body>
 </html>
