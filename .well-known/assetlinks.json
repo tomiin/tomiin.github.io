@@ -11,5 +11,18 @@
         "E8:2C:05:EF:41:29:4E:C7:7A:40:A0:D3:AE:77:00:79:77:2E:1F:C9:CA:7A:C9:24:29:9D:47:D1:C3:35:3F:84"
       ]
     }
+  },
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls",
+      "delegate_permission/common.get_login_creds"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "io.github.tomiin.doorman",
+      "sha256_cert_fingerprints": [
+        "E8:2C:05:EF:41:29:4E:C7:7A:40:A0:D3:AE:77:00:79:77:2E:1F:C9:CA:7A:C9:24:29:9D:47:D1:C3:35:3F:84"
+      ]
+    }
   }
 ]
